@@ -1,0 +1,209 @@
+/* Write some CSS below */
+.nav{
+    background:whitesmoke;
+    color: black;
+    padding: 15px 0;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: 'Chivo';
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+    }
+    .nav  a{
+    padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    height: 33px;
+    }
+    .nav  a:hover{
+    background: blueviolet;
+    color: whitesmoke;
+    }
+
+body {
+    font-size: 18px;
+    font-family: "Overpass";
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Chivo";
+}
+
+.banner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(99, 99, 99, 0.5)), url(images/backgroundimage.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 150px;
+    color: white;
+    text-align: center;
+}
+.bannerreservation {
+    background-image: url(images/art5.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 150px;
+    color: black;
+    text-align: center;
+}
+
+.btnpurple {
+    background-color:blueviolet;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 20px 10px 0 rgb(217, 193, 240);
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.btnpurple:hover {
+    background-color: chocolate;
+    color: snow;
+    transform: translate(10px, 10px);
+    box-shadow: 0 0 0 rgb(217, 193, 240);
+}
+
+p {
+    text-align: center;
+}
+
+.banner p {
+    color: rgb(230, 230, 230);
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.section-white {
+    background-color: white;
+    color: black;
+    margin: 50px 0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 900px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.card-white {
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+
+}
+
+.card-white img {
+    border-radius: 4px;
+    width: 100%;
+    height: 200;
+    object-fit: cover;
+
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.card-white {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.card-white img:hover {
+    transform: scale(1.5);
+}
+.btnorange {
+    background-color: chocolate;
+    padding: 15px;
+    color: snow;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 20px 10px 0 peachpuff;
+    transition: 0.5s;
+    display: inline-block;
+}
+.btnorange:hover {
+    background-color:blueviolet;
+    color: snow;
+    position: center;
+    transform: translate(10px, 10px);
+    box-shadow: 0 0 0 peachpuff;
+}
+.footer {
+    background-color: chocolate;
+    color: black;
+    padding: 80px;
+}
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.list-inline li {
+    display: inline;
+}
+.list-inline li i {
+    font-size: 40px;
+}
+#div-cta {
+    text-align: center;
+}
+
+
+@media (max-width: 950px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        width: 600px;
+    }
+    .body{
+        font-size: 12px;
+    }
+}
+@media (max-width: 600px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        width: 400px;
+    }
+    .body{
+        font-size: 12px;
+    }
+}
